@@ -1,0 +1,1 @@
+function Travincal() {	var i, orgX, orgY,		offsets = [101, -56, 92, -70, 78, -70, 100, -95, 82, -95, 112, -93];	Town.doChores();	Pather.useWaypoint(83);	Precast.doPrecast(true);	orgX = me.x;	orgY = me.y;	for (i = 0; i < offsets.length; i += 2) {		Pather.moveTo(orgX + offsets[i], orgY + offsets[i + 1]);		Attack.clear(20);	}	Pickit.pickItems();	return true;}
